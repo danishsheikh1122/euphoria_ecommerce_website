@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+body .products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); /* Adjust the minimum and maximum width as needed */
+  gap: 4rem;
+  width: 100%;
+  padding: 4rem;
+}
+body .products .pp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .products .pp .product1 {
+  width: 300px;
+  flex: 0 0 300px;
+}
+body .products .pp .product1 .product_img {
+  width: 100%;
+}
+body .products .pp .product1 .product_img img {
+  width: 100%;
+  height: 60%;
+}
+body .products .pp .product1 .product_details {
+  display: flex;
+  width: 100%;
+  margin-top: 1rem;
+  justify-content: space-between;
+}
+body .products .pp .product1 .product_details .details_left {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+}
+body .products .pp .product1 .product_details .details_left .heading {
+  text-transform: capitalize;
+}
+body .products .pp .product1 .product_details .details_left .heading h1 {
+  color: black;
+  font-size: 1.4rem;
+}
+body .products .pp .product1 .product_details .details_left .heading h2 {
+  font-size: 1.2rem;
+  color: #a9a9a9;
+  font-weight: 400;
+  line-height: 2rem;
+}
+body .products .pp .product1 .product_details .details_left .price_discount {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  width: 85%;
+}
+body .products .pp .product1 .product_details .details_left .price_discount .pd1 {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+body .products .pp .product1 .product_details .details_left .price_discount .pd2 {
+  font-size: 1.2rem;
+  color: #585858;
+  text-decoration: line-through;
+}
+body .products .pp .product1 .product_details .details_left .price_discount .pd3 {
+  color: red;
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+body .products .pp .product1 .product_details .details_right {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2cb929;
+  border-radius: 0.4rem;
+  color: white;
+  padding: 0.2rem;
+}
+body .products .pp .product1 .product_details .details_right .rating {
+  width: -moz-fit-content;
+  width: fit-content;
+}/*# sourceMappingURL=templete_for_product.css.map */
